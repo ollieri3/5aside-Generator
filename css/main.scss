@@ -1,0 +1,243 @@
+/*Main COLOURS ##############################*/
+
+$pictonBlue: #22A7F0;
+
+$grassGreen: #47CA47;
+
+$rageRed: #ef5350;
+
+$offWhite: #fafafa;
+
+
+/* BODY and Standard Styles ##################################*/
+
+body {
+  background: #212121;
+}
+
+.hide {
+  display: none;
+}
+
+/* Angular NG-CLOAK Display fix */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+
+/*Header Component Styles #######################*/
+header {
+  background-color: $pictonBlue;
+  color: $offWhite;
+  text-align: center;
+
+  padding-bottom: 1em;
+
+  h1 {
+     display: inline-block;
+     font-size: 4em;
+  }
+
+  figure {
+    display: inline-block;
+    position: relative;
+    top: 1em;
+    padding-right: 1em;
+
+
+    svg {
+      fill: $offWhite;
+    }
+  }
+
+  p {
+    margin-top: 1em;
+  }
+}
+
+
+/* Main Component Styles ####################*/
+
+.main-suppport-content {
+  margin-top: 2em;
+  color: $offWhite;
+
+
+}
+
+main{
+  // margin-top: 3em;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+
+  form {
+
+    // margin-bottom: 2em;
+
+    input.ng-dirty.ng-valid{
+      border: 1px solid #00e676;
+    }
+
+    input.ng-dirty.ng-invalid {
+      border: 1px solid $rageRed;
+    }
+
+    input {
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      display: inline-block;
+    }
+
+    p {
+      color: #9e9e9e;
+    }
+
+  }
+
+  .custom-btn {
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }
+
+}
+
+.options-pane {
+
+  button {
+    display: block;
+    margin-top: 0.5em;
+  }
+
+  h2 {
+    margin-bottom: 1.4em;
+  }
+
+}
+
+.team-name-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  background: url(../img/edit.png) no-repeat;
+  background-size: 5%;
+  background-position: 100%, 0px;
+  max-width: 300px;
+}
+
+
+.team-one .list-group-item {
+  color: #fafafa;
+  background-color: #ef5350;
+  border-radius: 5px;
+  margin: 2.5px;
+}
+
+.team-two .list-group-item {
+  color: #fafafa;
+  background-color: $pictonBlue;
+  border-radius: 5px;
+  margin: 2.5px;
+
+}
+
+/* FOOTBALL PITCH AND TEAM TOKENS #############*/
+
+.team-tokens {
+
+  color: $offWhite;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 3em;
+  }
+
+  li {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: move;
+    max-width: 75px;
+  }
+
+  .team-one-tokens {
+    background-color: rgba(239, 83, 80, 0.8);
+
+  }
+
+  .team-two-tokens {
+    background-color: rgba(34, 167, 240, 0.8);
+
+  }
+
+}
+
+.draggable {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.football-container {
+  margin-bottom: 6em;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 2em;
+
+  h2 {
+    color: #333333;
+    margin-bottom: 1em;
+  }
+
+  p {
+
+  }
+
+}
+
+.football-pitch {
+  max-width: 800px;
+
+  img{
+    object-fit: scale-down;
+  }
+
+}
+
+.pitch-on-hover {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+footer {
+  color: $offWhite;
+}
+
+/* Media queries ############################# */
+
+@media screen and (max-width: 767px) {
+  .options-pane {
+    h2{
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+@media screen and (max-width : 600px) {
+
+  .football-pitch-heading {
+    display: none;
+  }
+
+  .football-container {
+    display: none;
+  }
+
+
+}
