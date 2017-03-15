@@ -33,6 +33,15 @@ header {
 .main-suppport-content {
   margin-top: 2em;
   color: #fafafa; }
+  .main-suppport-content h2 {
+    display: inline-block;
+    margin-top: 2; }
+  .main-suppport-content figure {
+    position: relative;
+    top: 30px;
+    display: inline-block; }
+  .main-suppport-content svg {
+    fill: #fafafa; }
 
 main {
   background-color: #eee;

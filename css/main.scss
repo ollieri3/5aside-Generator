@@ -63,6 +63,21 @@ header {
   margin-top: 2em;
   color: $offWhite;
 
+  h2 {
+    display: inline-block;
+    margin-top: 2em;
+  }
+
+  figure {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+  }
+
+  svg {
+    fill: $offWhite;
+  }
+
 
 }
 
